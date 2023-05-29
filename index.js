@@ -112,6 +112,16 @@ console.log(unitName);
 
 console.log(`4) Cамым невыгодным по соотношению цены и силы являются юниты ${unitName[advantageousIndex]}, a самым выгодным ${unitName[notProfitableIndex]}`);
 
-console.log(pricePower);
+console.log(unitName);
+
+// считаем сколько раз видим значение
+var result = [1, 3, 4, 1, 1, 3, 4, 5].reduce(function(acc, el) {
+  acc[el] = (acc[el] || 0) + 1;
+  return acc;
+}, {});
+
+console.log(result);
+
+console.log(result['1']);
 
 // END
